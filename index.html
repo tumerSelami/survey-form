@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Movies and Series Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us see your sense of cinema and improve the platform</p>
+    </header>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input id="name" name="name" required type="text" placeholder="please enter your name" /></label>
+        <label id="email-label">Email <input id="email" name="mail" required type="email" placeholder="please enter your e-mail" /></label>
+        <label id="number-label">Age (optional) <input id="number" name="age" type="number" min="12" max="120" placeholder="please enter your age" /></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Which option best describes your watching frequency of movies and series etc.?
+          <select id="dropdown" name="referrer">
+            <option value="">please choose one</option>
+            <option value="1">I watch something everyday</option>
+            <option value="2">I watch something three times a week or so</option>
+            <option value="3">I watch something every once in a while</option>
+            <option value="4">I rarely watch something</option>
+          </select>
+        </label>
+        <label>What kind of productions you like the most?
+          <select id="dropdown" name="referrer">
+            <option value="">please choose one</option>
+            <option value="1">Movies</option>
+            <option value="2">Series</option>
+            <option value="3">Documentary</option>
+            <option value="4">Other (anime, reality shows, biography or you can comment in below)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>What genres you like the most?</p>
+          <label><input type="radio" name="genre" value="1" /> Drama</label>
+          <label><input type="radio" name="genre" value="2" /> Animation</label>
+          <label><input type="radio" name="genre" value="3" /> Thriller / Horror</label>
+          <label><input type="radio" name="genre" value="4" /> Romance</label>
+          <label><input type="radio" name="genre" value="5" /> Comedy</label>
+          <label><input type="radio" name="genre" value="6" /> Adventure / Fantasy</label>
+          <label><input type="radio" name="genre" value="7" /> Sci-Fi</label>
+          <label><input type="radio" name="genre" value="8" /> Mystery</label>
+      </fieldset>
+
+      <fieldset>
+        <p>What are the streaming platforms that you use?</p>
+        <label><input name="platform" type="checkbox" value="1" /> Disney Plus</label>
+        <label><input name="platform" type="checkbox" value="2" /> Netflix</label>
+        <label><input name="platform" type="checkbox" value="3" /> HBO Max</label>
+        <label><input name="platform" type="checkbox" value="4" /> Hulu</label>
+        <label><input name="platform" type="checkbox" value="5" /> Prime Video</label>
+        <label><input name="platform" type="checkbox" value="6" /> Other (you can mention it at below)</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Would you like to add any comments?
+          <textarea name="comment" rows="3" cols="30" placeholder="you can enter your comment in here..."></textarea>
+        </label>
+      </fieldset>
+      
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body
+</html>
