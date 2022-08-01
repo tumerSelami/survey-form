@@ -2,14 +2,21 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
+    background: #EE5037;
+    color: #202020;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #survey-form {
     width: 60vw;
-    max-width: 700px;
+    max-width: 750px;
     min-width: 400px;
     margin: 0 auto;
-    padding-bottom: 2em;
+    padding: 1.5em;
+    background: #1688E5;
+    border: 5px solid #454545;
+    border-radius: 20px;
 }
 
 #title,
@@ -20,7 +27,8 @@ body {
 fieldset {
     border: none;
     padding: 2rem 0;
-    border-bottom: 3px solid #3b3b3b;
+    border-bottom: 3px solid #454545;
+    padding: 28px 0;
 }
 
 fieldset:last-of-type {
@@ -38,6 +46,11 @@ select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    background: #454545;
+    border: 2px solid #2e2e2e;
+    border-radius: 5px;
+    color: #f7f7f7;
+    font-size: 16px;
 }
 
 .inline {
@@ -46,11 +59,21 @@ select {
     vertical-align: middle;
 }
 
+select {
+    width: 70%;
+}
+
 input[type="submit"] {
     display: block;
     width: 40%;
-    margin: 1em auto;
+    margin: 0 auto;
+    margin-bottom: 12px;
     height: 2.3em;
     font-size: 1.1rem;
     min-width: 250px;
+}
+
+div {
+    min-width: 100%;
+    height: 80px;
 }
