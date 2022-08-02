@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css' />
     <title>Survey Form</title>
   </head>
 
@@ -16,13 +17,13 @@
 
     <form id="survey-form">
       <fieldset>
-        <label id="name-label">Name <input id="name" name="name" required type="text" placeholder="please enter your name" /></label>
-        <label id="email-label">Email <input id="email" name="mail" required type="email" placeholder="please enter your e-mail" /></label>
-        <label id="number-label">Age (optional) <input id="number" name="age" type="number" min="12" max="120" placeholder="please enter your age" /></label>
+        <label id="name-label"><i class="fi fi-rr-user"></i>Name <input id="name" name="name" required type="text" placeholder="please enter your name" /></label>
+        <label id="email-label"><i class="fi fi-rr-envelope"></i>Email <input id="email" name="mail" required type="email" placeholder="please enter your e-mail" /></label>
+        <label id="number-label"><i class="fi fi-rr-hastag"></i>Age (optional) <input id="number" name="age" type="number" min="12" max="120" placeholder="please enter your age" /></label>
       </fieldset>
 
       <fieldset>
-        <label>Which option best describes your watching frequency of movies and series etc.?
+        <label id="first-selection"><i class="fi fi-rr-eye"></i>Which option best describes your watching frequency of movies and series etc.?
           <select id="dropdown" name="referrer">
             <option value="">please choose one</option>
             <option value="1">I watch something everyday</option>
@@ -31,19 +32,19 @@
             <option value="4">I rarely watch something</option>
           </select>
         </label>
-        <label>What kind of productions you like the most?
+        <label><i class="fi fi-rr-hand-holding-heart"></i>What kind of productions you like the most?
           <select id="dropdown" name="referrer">
             <option value="">please choose one</option>
             <option value="1">Movies</option>
             <option value="2">Series</option>
-            <option value="3">Documentary</option>
+            <option value="3">Documentaries</option>
             <option value="4">Other (anime, reality shows, biography or you can comment in below)</option>
           </select>
         </label>
       </fieldset>
 
       <fieldset>
-        <p>What genre you like the most?</p>
+        <p><i class="fi fi-rr-heart"></i>What genre you like the most?</p>
         <label><input class="inline" type="radio" name="genre" value="1" /> Drama</label>
         <label><input class="inline" type="radio" name="genre" value="2" /> Animation</label>
         <label><input class="inline" type="radio" name="genre" value="3" /> Thriller / Horror</label>
@@ -55,7 +56,7 @@
       </fieldset>
 
       <fieldset>
-        <p>What are the streaming platforms that you use?</p>
+        <p><i class="fi fi-rr-play-pause"></i>What are the streaming platforms you use?</p>
         <label><input class="inline" name="platform" type="checkbox" value="1" /> Disney Plus</label>
         <label><input class="inline" name="platform" type="checkbox" value="2" /> Netflix</label>
         <label><input class="inline" name="platform" type="checkbox" value="3" /> HBO Max</label>
@@ -65,7 +66,7 @@
       </fieldset>
 
       <fieldset>
-        <label>Would you like to add any comments?
+        <label><i class="fi fi-rr-comment-alt"></i>Would you like to add any comments?
           <textarea name="comment" rows="3" cols="30" placeholder="you can enter your comment in here..."></textarea>
         </label>
       </fieldset>

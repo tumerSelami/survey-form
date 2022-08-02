@@ -2,7 +2,8 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background: #EE5037;
+    background: linear-gradient(to bottom right, #EE5037, #ffa597 );
+    background-attachment: fixed;
     color: #202020;
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,9 +14,9 @@ body {
     max-width: 750px;
     min-width: 400px;
     margin: 0 auto;
-    padding: 1.5em;
-    background: #1688E5;
-    border: 5px solid #454545;
+    padding: 0 1.5em 1.5em 1.5em;
+    background: linear-gradient(to bottom right, #57b4ff, #1688E5 );
+    border: 3px solid #454545;
     border-radius: 20px;
 }
 
@@ -28,6 +29,12 @@ body {
 #email-label,
 #number-label {
     width: 99%;
+
+}
+
+#name-label,
+#email-label {
+    margin-bottom: 24px;
 }
 
 fieldset {
@@ -43,7 +50,7 @@ fieldset:last-of-type {
 
 label {
     display: block;
-    margin: 0.5rem 0;z
+    margin: 0.5rem 0;
 }
 
 input,
@@ -52,7 +59,7 @@ select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
-    background: #454545;
+    background: linear-gradient(to bottom right, #454545, #555555 );
     border: 2px solid #2e2e2e;
     border-radius: 5px;
     color: #f7f7f7;
@@ -69,6 +76,14 @@ select {
     width: 70%;
 }
 
+#first-selection {
+    margin-bottom: 24px;
+}
+
+option {
+    color: #202020;
+}
+
 input[type="submit"] {
     display: block;
     width: 40%;
@@ -77,6 +92,17 @@ input[type="submit"] {
     height: 2.3em;
     font-size: 1.1rem;
     min-width: 250px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom right, #EE5037, #ffa597 );
+    color: #202020;
+}
+
+i {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 div {
